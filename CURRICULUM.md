@@ -13,8 +13,8 @@
 - [ ] `02_data_structures/02_maps` 
 
 ## Этап 3: Функции и Указатели 
-- [ ] `03_functions_and_pointers/01_functions`
-- [ ] `03_functions_and_pointers/02_pointers` 
+- [x] `03_functions_and_pointers/01_functions`
+- [x] `03_functions_and_pointers/02_pointers` 
 
 ## Этап 4: Deep Dive (Внутреннее устройство)
 - [ ] `04_internals_deep_dive/01_slice_internals`
