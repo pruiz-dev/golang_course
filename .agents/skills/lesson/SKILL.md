@@ -12,7 +12,7 @@ Execution Steps:
 4. Create the next practice directory (e.g., `practice_01`).
 5. Inside the practice directory, create a `THEORY.md` containing necessary theory.
 6. Also create a `README.md` containing the specific coding task based on the theory.
-7. CRITICAL: For Phase 1 practices, the task MUST require the user to write code from scratch (blank slate). Do NOT provide any starting code in the `README.md` except for `package main`.
+7. CRITICAL (Guided Problem Solving): Formulate the coding task in `README.md` as a technical requirement with clear acceptance criteria. Provide high-level architectural hints (e.g., 'You will need a main package and a separate logic package'), but do NOT provide exact step-by-step instructions (like 'create file X, write line Y'). Give the user enough structural guidance so they don't get lost, but leave the implementation details and file creation process up to them.
 8. The coding task should enforce the use of Go modules and multiple `.go` files if applicable.
 9. Do NOT write the solution for the user.
 
