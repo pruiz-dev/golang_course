@@ -9,7 +9,23 @@ Execution Steps:
 1. Identify the current active topic by looking at the user's active files or the most recently discussed topic (e.g., `01_variables_and_types`).
 2. Analyze the ENTIRE recent chat history pertaining to this topic. Do NOT just look at the last prompt. Extract all deep theoretical explanations, questions asked by the user, and architectural details discussed.
 3. The Knowledge Base should be structured with subdirectories for each module (e.g., `knowledge_base/02_control_flow/`).
-4. Instead of merging everything into one giant file, create or update a specific `.md` file for the current practice within the module's subdirectory. The filename MUST strictly follow the format: `<practice_name>-<short_descriptive_name>.md` (e.g., `knowledge_base/02_control_flow/practice_01-switch_basics.md` or `knowledge_base/03_pointers_and_memory/extra_practice_01-double_pointers.md`).
+4. Instead of merging everything into one giant file, create or update a specific `.md` file for the current practice within the module's subdirectory. The filename MUST strictly adhere to the following naming conventions:
+   - **Запланированные практики (Planned Practices):** Имя файла ВСЕГДА начинается с двузначного номера практики (соответствует номеру папки практики, например, `01`, `02`, `03`...), затем нижнее подчеркивание `_` и осмысленное название на английском языке, отражающее суть зафиксированных знаний (или тему практики).
+     Формат: `XX_<meaningful_english_name>.md`
+     Примеры:
+     * `01_switch_basics.md`
+     * `04_slicing_and_memory_leaks.md`
+     * `05_concurrent_map_writes.md`
+   - **Дополнительные практики (Extra Practices, запрошенные через `/practice`):** Имя файла ВСЕГДА начинается со слова `extra`, затем нижнее подчеркивание `_`, затем двузначный номер экстра-практики (собственная нумерация экстра-практик: `01`, `02`...), затем нижнее подчеркивание `_` и осмысленное название на английском языке, отражающее суть зафиксированных знаний.
+     Формат: `extra_XX_<meaningful_english_name>.md`
+     Примеры:
+     * `extra_01_slice_mutation_idioms.md`
+     * `extra_02_double_pointers.md`
+   - **Фундаментальные сквозные справочники (Core Deep Dives):** Для глобальных теоретических гайдов и справочников, не привязанных к номеру одной практики, используется префикс `core_`.
+     Формат: `core_<meaningful_english_name>.md`
+     Примеры:
+     * `core_iteration_methods.md`
+     * `core_map_evacuation_mechanics.md`
 5. Synthesize the extracted chat history and ALL theory from the practice's `THEORY.md` into a well-structured, **exhaustive** academic markdown document. Do NOT summarize or shorten the information. Include all edge cases, syntax variations, and explanations discussed, so the file serves as a comprehensive preparation guide for interviews on this specific topic. Use clear headings, code examples, and Q&A sections.
 6. The document's title and introduction must be specific to the construct or topic being studied (e.g., "# База Знаний: Конструкция switch" instead of a generic module name).
 7. The resulting document must serve as a standalone, deep-dive cheat sheet for a Middle-level developer.
