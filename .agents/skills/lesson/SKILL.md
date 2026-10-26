@@ -17,3 +17,4 @@ Execution Steps:
 9. Do NOT write the solution for the user.
 
 Strict Directive: All your output must be in Russian.
+Strict Directive: NEVER use LaTeX or dollar signs ($) for math, variables or arrows. Write formulas as plain text (e.g. N * (N + 1) / 2) and arrows as "->" or "→".

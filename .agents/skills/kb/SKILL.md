@@ -31,3 +31,4 @@ Execution Steps:
 7. The resulting document must serve as a standalone, deep-dive cheat sheet for a Middle-level developer.
 
 Strict Directive: All your output (both the document and the chat response) must be in Russian.
+Strict Directive: NEVER use LaTeX or dollar signs ($) for math, variables or arrows. Write formulas as plain text (e.g. N * (N + 1) / 2) and arrows as "->" or "→".
